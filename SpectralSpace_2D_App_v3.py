@@ -612,7 +612,7 @@ def main():
 
         st.subheader("4. Analysis Parameters")
         knn_neighbors = st.slider("Number of KNN neighbors", min_value=1, max_value=50, value=5)
-        max_neighbors_plot = st.slider("Max neighbors for convergence plot", min_value=5, max_value=100, value=20)
+        max_neighbors_plot = st.slider("Max neighbors for convergence plot", min_value=5, max_value=300, value=20)
         
         st.subheader("5. Expected Values (Optional)")
         st.markdown("Enter expected values and errors for comparison:")
@@ -1315,4 +1315,5 @@ def read_spectrum_file(file_obj_or_path, filename=None):
 
 if __name__ == "__main__":
     main()
+
 
